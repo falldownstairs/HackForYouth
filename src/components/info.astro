@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="innovation">
+      <img class="img-icon" alt="" src="../../public/pictures/innovationBG.jpg" />
+
+      <div class="blue"></div>
+      <div class="text-content-title">
+        <b class="title">Welcome to Hack4Youth!</b>
+        <div class="subtitle">
+          <p class="welcome-to-the">
+            Hack For Youth is an exciting and accessible hackathon designed for 
+            high school coders eager to unleash their creativity and enhance their 
+            programming skills. Our mission is to inspire the next generation of innovators 
+            and entrepreneurs by introducing them to programming in a collaborative environment.
+          </p>
+        <div class = "divider">
+        <div class = "stats">
+          <p>$1000+ in prizes</p>
+          <p>40+ participants</p>
+          <p>8 hours long</p>
+        </div>
+        <div class = "divider"></div>
+        <p class = "scheduleText">Schedule</p>
+        <div class = "schedule">
+          <div class = "infoBox">
+            <p class = "timeInfo">Opening Ceremony</p>
+            <p class = "time">10:30am</p>
+          </div>
+          <div class = "infoBox">
+            <p class = "timeInfo">Lunch Break</p>
+            <p class = "time">1:30pm</p>
+          </div>
+          <div class = "infoBox">
+            <p class = "timeInfo">Submission Deadline</p>
+            <p class = "time">5:30pm</p>
+          </div>
+          <div class = "infoBox">
+            <p class = "timeInfo">Closing Ceremony</p>
+            <p class = "time">6:30pm</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+ body {
+  margin: 0;
+  line-height: normal;
+  background-size: cover;
+}
+
+:root {
+  /* fonts */
+  --subtitle: Inter;
+
+  /* font sizes */
+  --subtitle-size: 2rem;
+  --title-hero-size: 4.5rem;
+
+  /* Colors */
+  --color-gray: #001f3a;
+
+  /* Spacing */
+  /* --space-200: 0.5rem;
+  --space-800: 2rem;
+  --space-600: 1.5rem;
+  --space-4000: 10rem; */
+  --device-width: 75rem;
+}
+.blue,
+.img-icon {
+  margin: 0 !important;
+  position: absolute;
+}
+.img-icon {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.blue {
+  background-color: rgba(82, 169, 245, 0.75);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.title {
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.03em;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.title,
+.welcome-to-the {
+  margin: 0;
+}
+
+.title{
+  padding-bottom: 2rem;
+}
+.welcome-to-the
+{
+  padding-bottom: 3.65rem;
+}
+.subtitle {
+  position: relative;
+  font-size: var(--subtitle-size);
+  line-height: 120%;
+  font-weight: 500;
+}
+.innovation,
+.text-content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text-content-title {
+  align-items: center;
+  gap: var(--space-200);
+  z-index: 2;
+  text-align: center;
+  font-size: var(--title-hero-size);
+  color: var(--color-gray);
+  font-family: var(--subtitle);
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.innovation {
+  width: 100%;
+  position: relative;
+  height: 29.063rem;
+  max-width: 100%;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 1150px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: -3;
+}
+
+.stats{
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.03em;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 60px;
+}
+.divider {
+  border-top: 4.5px solid #001f3a;
+  
+}
+.schedule{
+  padding-top: -100px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.infoBox{
+  /* background-color: #408bcdb4; */
+  padding-top: -2rem;
+  width: 250px;
+  height: fit-content;
+  align-items: start;
+}
+
+.timeInfo{
+  font-size: 24px;
+  padding: 0;
+}
+
+.time{
+  margin-top: -1.5rem;
+  padding: 0;
+}
+
+.scheduleText{
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+</style>

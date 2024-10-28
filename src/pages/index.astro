@@ -1,0 +1,46 @@
+---
+import Header from "../components/header.astro"
+import Title from "../components/title.astro"
+import Info from "../components/info.astro"
+import Sponsors from "../components/sponsors.astro"
+import FAQ from "../components/questions.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="../public/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Hack4Youth</title>
+	</head>
+	<body>
+		<Header />
+		<Title />
+		<div id = "info"/>
+		<Info />
+		<div id = "theSponsors"/>
+		<Sponsors />
+		<div id = "theFaq"></div>
+		<FAQ />
+
+
+		<script is:inline>
+			function myFunc(){
+				const T = document.getElementById("title")
+				T.scrollIntoView(
+					{
+						behavior: "smooth"
+					})
+				console.log("helloworld")
+				}
+		</script>
+	</body>
+
+</html>
+
+<style>
+	body{
+		overflow-x: hidden;
+	}
+</style>
