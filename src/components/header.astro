@@ -27,13 +27,13 @@
           </ul>
       </nav>
   </header>
-  <div id="mobile__menu" class="overlay">
+  <!-- <div id="mobile__menu" class="overlay">
       <div class="overlay__content">
           <a href="#about">About</a>
           <a href="#sponsors">Sponsors</a>
           <a href="#faq">FAQ</a>
       </div>
-  </div>
+  </div> -->
     <script is:inline>
 			function directToID(id){
 				const T = document.getElementById(id)
@@ -64,41 +64,29 @@ header {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: #71B1E5;
+  z-index: 200;
+  
 }
 
 
+.logo,
+.disc,
+.insta{
+  object-fit: cover;
+  cursor: pointer;
+}
 .logo{
   height: 3.25rem;
   width: auto;
-
-  position: relative;
-  object-fit: cover;
-  cursor: pointer;
-
 }
 .disc{
   padding-top: 0.35rem;
   height: 2.75rem;
   width: auto;
-
-  position: relative;
-  object-fit: cover;
-  cursor: pointer;
-
 }
 .insta{
   height: 3.15rem;
   width: auto;
-
-  position: relative;
-  object-fit: cover;
-  cursor: pointer;
-
-}
-
-
-nav {
-  order: 1;
 }
 
 .nav__links a,
@@ -120,16 +108,9 @@ nav {
   padding: 0px 20px;
 }
 
-.nav__links li:nth-child(1) {
-  padding: 0 20px 0 0;
-}
-
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-}
-
 .nav__links li a:hover {
   color: #153959;
+  transition: all 0.3s ease 0s;
 }
 
 .social__links {
@@ -140,90 +121,59 @@ nav {
   padding: 0px 10px;
 }
 
-.cta {
-  order: 2;
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
+
 
 .cta:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
-/* Mobile Nav */
 
-.menu {
-  display: none;
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: #24252a;
-  overflow-x: hidden;
-  transition: all 0.5s ease 0s;
-}
-
-.overlay--active {
-  width: 100%;
-}
-
-.overlay__content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay a {
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: all 0.3s ease 0s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #0088a9;
-}
-.overlay .close {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #edf0f1;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
+@media (max-width:580px) {
+  .logo{
+    height: 2.9rem;
   }
-  .overlay .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+  .disc{
+    height: 2.3rem;
+  }
+  .insta{
+    height: 2.95rem;
+  }
+  .nav__links li {
+  padding: 0px 15px;
+  }
+  .nav__links{
+    font-size: 16px;
+  }
+  header{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .nav__links,
-  .cta {
-    display: none;
+@media (max-width:500px) {
+  .logo{
+    height: 2.6rem;
   }
-  .menu {
-    display: initial;
+  .disc{
+    height: 2.0rem;
+  }
+  .insta{
+    height: 2.5rem;
+  }
+  .nav__links li {
+  padding: 0px 11px;
+  }
+  .nav__links{
+    font-size: 12px;
+  }
+  header{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
   }
 }
-
 
 </style>

@@ -17,7 +17,7 @@
       <div class="text-content-title">
         <b class="title">Welcome to Hack4Youth!</b>
         <div class="subtitle">
-          <p class="welcome-to-the">
+          <p>
             Hack For Youth is an exciting and accessible hackathon designed for 
             high school coders eager to unleash their creativity and enhance their 
             programming skills. Our mission is to inspire the next generation of innovators 
@@ -34,19 +34,19 @@
         <div class = "schedule">
           <div class = "infoBox">
             <p class = "timeInfo">Opening Ceremony</p>
-            <p class = "time">10:30am</p>
+            <p class = "timeInfo">10:30am</p>
           </div>
           <div class = "infoBox">
             <p class = "timeInfo">Lunch Break</p>
-            <p class = "time">1:30pm</p>
+            <p class = "timeInfo">1:30pm</p>
           </div>
           <div class = "infoBox">
             <p class = "timeInfo">Submission Deadline</p>
-            <p class = "time">5:30pm</p>
+            <p class = "timeInfo">5:30pm</p>
           </div>
           <div class = "infoBox">
             <p class = "timeInfo">Closing Ceremony</p>
-            <p class = "time">6:30pm</p>
+            <p class = "timeInfo">6:30pm</p>
           </div>
         </div>
 
@@ -73,18 +73,15 @@
 
   /* Colors */
   --color-gray: #001f3a;
-
-  /* Spacing */
-  /* --space-200: 0.5rem;
-  --space-800: 2rem;
-  --space-600: 1.5rem;
-  --space-4000: 10rem; */
   --device-width: 75rem;
 }
 .blue,
 .img-icon {
   margin: 0 !important;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .img-icon {
   width: 100%;
@@ -109,32 +106,7 @@
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
-}
-.title {
-  position: relative;
-  font-size: inherit;
-  letter-spacing: -0.03em;
-  line-height: 120%;
-  font-weight: 700;
-  font-family: inherit;
-}
-.title,
-.welcome-to-the {
-  margin: 0;
-}
-
-.title{
-  padding-bottom: 2rem;
-}
-.welcome-to-the
-{
-  padding-bottom: 3.65rem;
-}
-.subtitle {
-  position: relative;
-  font-size: var(--subtitle-size);
-  line-height: 120%;
-  font-weight: 500;
+  
 }
 .innovation,
 .text-content-title {
@@ -150,22 +122,48 @@
   font-size: var(--title-hero-size);
   color: var(--color-gray);
   font-family: var(--subtitle);
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
 }
 .innovation {
+  display: inline-block;
   width: 100%;
   position: relative;
   height: 29.063rem;
   max-width: 100%;
   align-items: flex-start;
-  padding-top: 60px;
-  padding-bottom: 1150px;
+  padding-top: 3.75rem;
+  padding-bottom: 65rem;
   box-sizing: border-box;
   position: relative;
   z-index: -3;
 }
 
+.title {
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.03em;
+  line-height: 120%;
+  font-weight: 700;
+  font-size: 80px;
+  font-family: inherit;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+
+}
+
+.subtitle {
+  margin:0;
+  position: relative;
+  font-size: var(--subtitle-size);
+  line-height: 120%;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  width: fit-content;
+}
 .stats{
   position: relative;
   font-size: inherit;
@@ -188,9 +186,8 @@
 }
 
 .infoBox{
-  /* background-color: #408bcdb4; */
-  padding-top: -2rem;
-  width: 250px;
+
+  width:15rem;
   height: fit-content;
   align-items: start;
 }
@@ -198,16 +195,135 @@
 .timeInfo{
   font-size: 24px;
   padding: 0;
+  margin: -0.1rem;
+  margin-top: 0;
 }
 
-.time{
-  margin-top: -1.5rem;
-  padding: 0;
-}
 
 .scheduleText{
   font-weight: 700;
   font-size: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width:1050px){
+  .title{
+    font-size: 70px;
+  }
+  .subtitle{
+    font-size: 25px;
+  }
+  .stats{
+    font-size: 50px;
+    margin:-1rem;
+  }
+  .innovation{
+    padding-bottom: 52rem;
+  }
+  .scheduleText{
+    font-size: 50px;
+  }
+  .timeInfo{
+    font-size: 18px;
+  }
+  .infoBox{
+    width: 12rem;
+  }
+
+}
+@media (max-width:920px){
+  .title{
+    font-size: 50px;
+  }
+  .subtitle{
+    font-size: 20px;
+  }
+  .stats{
+    font-size: 40px;
+    margin:-1rem;
+  }
+  .innovation{
+    padding-bottom: 43rem;
+  }
+
+}
+@media (max-width:800px){
+  .title{
+    font-size: 45px;
+  }
+  .subtitle{
+    font-size: 17px;
+  }
+  .stats{
+    font-size: 33px;
+    margin:-1rem;
+  }
+  .innovation{
+    padding-bottom: 35rem;
+  }
+  .scheduleText{
+    font-size: 35px;
+    padding-bottom: 1.5rem;
+  }
+  .timeInfo{
+    font-size: 14px;
+  }
+  .infoBox{
+    width: 9rem;
+  }
+}
+@media (max-width:600px){
+  .title{
+    font-size: 35px;
+  }
+  .subtitle{
+    font-size: 13px;
+  }
+  .stats{
+    font-size: 25px;
+    margin:-1rem;
+  }
+  .innovation{
+    padding-bottom: 23rem;
+  }
+  .scheduleText{
+    font-size: 28px;
+    padding-bottom: 1rem;
+  }
+  .timeInfo{
+    font-size: 10px;
+  }
+  .infoBox{
+    width: 6.5rem;
+  }
+}
+
+@media (max-width:480px){
+  .title{
+    font-size: 22px;
+  }
+  .subtitle{
+    font-size: 11.5px;
+  }
+  .stats{
+    font-size: 22px;
+    margin:-1rem;
+  }
+  .innovation{
+    margin-bottom: 0;
+    padding-bottom: 19rem;
+  }
+  .scheduleText{
+    font-size: 24px;
+    padding-bottom: 1rem;
+  }
+  .timeInfo{
+    font-size: 8.1px;
+  }
+  .infoBox{
+    width: 5.25rem;
+  }
+ 
 }
 </style>

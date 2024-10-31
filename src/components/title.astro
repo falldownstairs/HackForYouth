@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="hero-actions">
-      <!-- <img class="img-icon" alt="" src="./pictures/venue.jpg" /> -->
+      <img class="img-icon" alt="" src="./pictures/venue.jpg" />
       <div class="blue"/>
       <section class="text-content-title">
         <h1 class="title">Hack4Youth</h1>
@@ -30,99 +30,85 @@
 <style>
   body {
   margin: 0;
-  line-height: normal;
-  background-size: cover;
 }
 
 :root {
+  font-size: 16;
   /* fonts */
-  --subtitle: Inter;
+  --single-line-body-base: Inter;
 
   /* font sizes */
-  --subtitle-size: 2rem;
-  --title-hero-size: 4.5rem;
+  --single-line-body-base-size: 1rem;
 
   /* Colors */
-  --color-gray: #001f3a;
-  --device-width: 75rem;
+  --background-brand-default: #2c2c2c;
+  --text-default-default: #1e1e1e;
+  --text-brand-on-brand: #f5f5f5;
+
+  /* Spacing */
+
+
+  /* Gaps */
+  --gap-5xs: 0.5rem;
+
+  /* Paddings */
+  --padding-xs: 0.75rem;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
 }
 
 
 .subtitle,
 .title {
   margin: 0;
-  align-self: stretch;
   position: relative;
   line-height: 120%;
-  font-family: inherit;
+  color: #8fcdff;
+  font-family: var(--single-line-body-base);
 }
-.title {
+
+.title{
   font-size: 120px;
-  letter-spacing: -0.03em;
 }
 .subtitle {
   padding-bottom: 25px;
   font-size: 40px;
   font-weight: 500;
-  color: #8fcdff;
 }
 .text-content-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--space-200);
   text-align: center;
   font-size: var(--title-hero-size);
-  color: #a5d7ff;
-  font-family: var(--single-line-body-base);
 }
-
 
 .hero-actions {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background-size: cover;
-}
-.button{
-  width: 15rem;
-  gap: var(--space-400);
-  z-index: 100;
-  border-radius: 10px;
-}
-.hero-actions {
-  width: 100%;
   position: relative;
-  background-color: #001f3a;
-  max-width: 100%;
   flex-direction: column;
-  padding-top: 250px;
-  padding-bottom: 300px;
-  box-sizing: border-box;
-  gap: var(--space-800);
-  text-align: left;
-  font-size: var(--single-line-body-base-size);
-  color: var(--text-default-default);
+  padding-top: 15.625rem;
+  padding-bottom: 18.75rem;
   font-family: var(--single-line-body-base);
 }
-.blue,
+
 .img-icon {
   margin: 0 !important;
   position: absolute;
-}
-.img-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+  box-sizing: border-box;
 }
 .blue {
+  position: absolute;
   background-color: #001f3ace;
   width: 100%;
   height: 100%;
@@ -131,9 +117,7 @@
   bottom: 0;
   left: 0;
   max-width: 100%;
-  overflow: hidden;
   max-height: 100%;
-  object-fit: cover;
 }
 .sign-up {
   position: relative;
@@ -141,34 +125,114 @@
   line-height: 100%;
   font-family: var(--subtitle);
   color: var(--text-default-default);
-  text-align: left;
   display: inline-block;
-  min-width: 4.75rem;
 }
-.actions,
-.button{
-  display: flex;
-  align-items: flex-start;
-}
+
 .button {
+  width: 15rem;
+  z-index: 100;
   cursor: pointer;
   border: 1px solid #024d8a;
-  padding: 0.5rem 5.062rem;
   background-color: #75bcf6;
   height: 2.5rem;
-  border-radius: var(--radius-200);
-  box-sizing: border-box;
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
-.actions{
-  max-width: 100%;
+
+@media(max-width: 1050px) {
+  .hero-actions{
+    padding-top: 12rem;
+    padding-bottom: 14rem;
+  }
+  .subtitle{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  .title{
+    font-size: 90px;
+  }
+  .button{
+    width: 12rem;
+    height: 2rem;
+  }
+  .sign-up{
+    font-size: 1rem;
+  }
+
+  
 }
-.actions {
-  width: 30.25rem;
-  flex-direction: row;
-  justify-content: flex-end;
+@media(max-width: 850px) {
+  .hero-actions{
+    padding-top: 9rem;
+    padding-bottom: 11.5rem;
+  }
+  .subtitle{
+    font-size: 25px;
+    padding-bottom: 12px;
+  }
+  .title{
+    font-size: 75px;
+  }
+  .button{
+    width: 10rem;
+    height:1.6rem;
+  }
+  .sign-up{
+    font-size: 0.8rem;
+  }
+
+  
+}
+@media(max-width: 705px) {
+  .hero-actions{
+    padding-top: 7rem;
+    padding-bottom: 9.5rem;
+  }
+  .subtitle{
+    font-size: 20px;
+    padding-bottom: 9px;
+  }
+  .title{
+    font-size: 60px;
+  }
+  .button{
+    width: 8rem;
+    height: 1.5rem;
+  }
+  .sign-up{
+    font-size: 0.65rem;
+  }
+
+
+  
+}
+@media(max-width: 600px) {
+  .hero-actions{
+    padding-top: 5.5rem;
+    padding-bottom: 7.5rem;
+  }
+  .subtitle{
+    font-size: 15px;
+  }
+  .title{
+    font-size: 45px;
+  }
+  .button{
+    width: 7rem;
+    height: 1.4rem;
+  }
+  .sign-up{
+    font-size: 0.5rem;
+  }
+
+  
+}
+@media(max-width: 490px) {
+  .hero-actions{
+    padding-top: 4rem;
+    padding-bottom: 5.5rem;
+  }
+
+
+  
 }
 </style>
