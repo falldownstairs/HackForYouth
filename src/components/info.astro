@@ -48,6 +48,23 @@
             <p class = "timeInfo">Closing Ceremony</p>
             <p class = "timeInfo">6:30pm</p>
           </div>
+        
+        </div>
+        <div class = "divider"/>
+        <p class = "venuelabel">Venue</p>
+        <div class = "venue">
+          <img class = "codeninjas" src = "/pictures/codeNinjasVenue.png">
+          <div class = "venuetext">
+            <p class = "venuetitle">Code Ninjas Richmond</p>
+            <p class = "venuesub"> Code Ninjas offers an enriching coding experience for kids, 
+              fostering the development of valuable coding skills through a 
+              game-based curriculum.</p>
+            <p class = "venuesub">
+              They have generously offered their venue to let us host this hackathon, 
+              the address for our venue is 6699 River Rd
+            </p>
+          </div>
+
         </div>
 
         </div>
@@ -135,7 +152,7 @@
   max-width: 100%;
   align-items: flex-start;
   padding-top: 3.75rem;
-  padding-bottom: 65rem;
+  padding-bottom: 92rem;
   box-sizing: border-box;
   position: relative;
   z-index: -3;
@@ -190,6 +207,10 @@
   width:15rem;
   height: fit-content;
   align-items: start;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  background-color: rgba(47, 124, 205, 0.413);
+  
 }
 
 .timeInfo{
@@ -204,10 +225,55 @@
   font-weight: 700;
   font-size: 70px;
   margin-bottom: 0;
+  margin-top: 2.75rem;
   padding-bottom: 2.5rem;
 }
 
-@media (max-width:1050px){
+.venue{
+  flex-direction: row;
+  display: flex;
+  justify-content:;
+  text-align: middle;
+  padding: 2rem;
+}
+
+.codeninjas{
+  padding: 1rem;
+  height: 20rem;
+  background-color: rgb(46, 109, 177, 0.5);
+  width:auto;
+}
+.venuelabel{
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-top: 2.5rem;
+}
+.venuetext{
+  padding-left: 2rem;
+  margin-top: -1.25rem;
+
+}
+.venuesub{
+  font-size: 22px;
+}
+.venuetitle{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: -0.75rem;
+}
+@media (max-width:1140px){
+  .codeninjas{
+    height: 17rem;
+  }
+  .venuetitle{
+    font-size: 35px;
+  }
+  .venuesub{
+    font-size: 18px;
+  }
+}
+@media (max-width:1075px){
   .title{
     font-size: 70px;
   }
@@ -219,20 +285,31 @@
     margin:-1rem;
   }
   .innovation{
-    padding-bottom: 52rem;
+    padding-bottom: 78rem;
   }
+  .venuelabel,
   .scheduleText{
     font-size: 50px;
   }
+  
   .timeInfo{
     font-size: 18px;
   }
   .infoBox{
     width: 12rem;
   }
+  .codeninjas{
+    height: 17rem;
+  }
+  .venuetitle{
+    font-size: 35px;
+  }
+  .venuesub{
+    font-size: 18px;
+  }
 
 }
-@media (max-width:920px){
+@media (max-width:960px){
   .title{
     font-size: 50px;
   }
@@ -244,11 +321,19 @@
     margin:-1rem;
   }
   .innovation{
-    padding-bottom: 43rem;
+    padding-bottom: 63rem;
   }
-
+  .codeninjas{
+    height: 14rem;
+  }
+  .venuetitle{
+    font-size: 31px;
+  }
+  .venuesub{
+    font-size: 17px;
+  }
 }
-@media (max-width:800px){
+@media (max-width:840px){
   .title{
     font-size: 45px;
   }
@@ -260,11 +345,15 @@
     margin:-1rem;
   }
   .innovation{
-    padding-bottom: 35rem;
+    padding-bottom: 55rem;
   }
+  
   .scheduleText{
     font-size: 35px;
     padding-bottom: 1.5rem;
+  }
+  .venuelabel{
+    font-size: 35px;
   }
   .timeInfo{
     font-size: 14px;
@@ -272,8 +361,18 @@
   .infoBox{
     width: 9rem;
   }
+  .codeninjas{
+    height: 11.5rem;
+  }
+  .venuetitle{
+    font-size: 29px;
+    padding-bottom: 0.5rem;
+  }
+  .venuesub{
+    font-size: 15px;
+  }
 }
-@media (max-width:600px){
+@media (max-width:770px){
   .title{
     font-size: 35px;
   }
@@ -285,11 +384,16 @@
     margin:-1rem;
   }
   .innovation{
-    padding-bottom: 23rem;
+    padding-bottom: 41.5rem;
   }
+  
   .scheduleText{
     font-size: 28px;
     padding-bottom: 1rem;
+  }
+  .venuelabel{
+    font-size: 28px;
+    margin-bottom: -0.5rem;
   }
   .timeInfo{
     font-size: 10px;
@@ -297,9 +401,50 @@
   .infoBox{
     width: 6.5rem;
   }
+  .codeninjas{
+    height: 9rem;
+  }
+  .venuetitle{
+    font-size: 25px;
+  }
+  .venuesub{
+    font-size: 14px;
+  }
 }
-
-@media (max-width:480px){
+@media (max-width:670px){
+  .codeninjas{
+    height: 8.5rem;
+  }
+  .venuetitle{
+    font-size: 20px;
+  }
+  .venuesub{
+    font-size: 12px;
+  }
+}
+@media (max-width:610px){
+  .codeninjas{
+    height: 7.5rem;
+  }
+  .venuetitle{
+    font-size: 18px;
+  }
+  .venuesub{
+    font-size: 10px;
+  }
+}
+@media (max-width:550px){
+  .codeninjas{
+    height: 7rem;
+  }
+  .venuetitle{
+    font-size: 15px;
+  }
+  .venuesub{
+    font-size: 9px;
+  }
+}
+@media (max-width:515px){
   .title{
     font-size: 22px;
   }
@@ -312,8 +457,9 @@
   }
   .innovation{
     margin-bottom: 0;
-    padding-bottom: 19rem;
+    padding-bottom: 38rem;
   }
+  .venuelabel,
   .scheduleText{
     font-size: 24px;
     padding-bottom: 1rem;
@@ -324,6 +470,38 @@
   .infoBox{
     width: 5.25rem;
   }
- 
+  .codeninjas{
+    height: 6rem;
+  }
+  .venuetitle{
+    font-size: 13px;
+  }
+  .venuesub{
+    font-size: 7.5px;
+  }
+}
+@media (max-width:471px){
+  .codeninjas{
+    height: 5.5rem;
+  }
+  .venuetitle{
+    font-size: 10px;
+  }
+  .venuesub{
+    font-size: 6.5px;
+  }
+}
+@media (max-width:430px){
+  .codeninjas{
+    height: 5.5rem;
+    padding: 0.5rem;
+  }
+  .venuetitle{
+    font-size: 8px;
+  }
+  .venuesub{
+    font-size: 5.5px;
+    spacing
+}
 }
 </style>
