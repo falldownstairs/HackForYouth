@@ -11,10 +11,10 @@
     />
   </head>
   <body>
-    <div class="hero-actions">
+    <div class="page">
       <img class="img-icon" alt="" src="./pictures/venue.jpg" />
       <div class="blue"/>
-      <section class="text-content-title">
+      <section class="box">
         <h1 class="title">Hack4Youth</h1>
         <h1 class="subtitle">November 24, 2024</h1>
       </section>
@@ -34,28 +34,7 @@
 
 :root {
   font-size: 16;
-  /* fonts */
-  --single-line-body-base: Inter;
-
-  /* font sizes */
-  --single-line-body-base-size: 1rem;
-
-  /* Colors */
-  --background-brand-default: #2c2c2c;
-  --text-default-default: #1e1e1e;
-  --text-brand-on-brand: #f5f5f5;
-
-  /* Spacing */
-
-
-  /* Gaps */
-  --gap-5xs: 0.5rem;
-
-  /* Paddings */
-  --padding-xs: 0.75rem;
-
-  /* Border radiuses */
-  --br-5xs: 8px;
+  font-family: Inter;
 }
 
 
@@ -70,25 +49,24 @@
 
 .title{
   font-size: 120px;
+  margin-bottom: -0.75rem;
 }
 .subtitle {
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   font-size: 40px;
   font-weight: 500;
 }
-.text-content-title {
+.box {
   text-align: center;
-  font-size: var(--title-hero-size);
 }
 
-.hero-actions {
+.page {
   display: flex;
   align-items: center;
   position: relative;
   flex-direction: column;
-  padding-top: 15.625rem;
+  padding-top: 15.65rem;
   padding-bottom: 18.75rem;
-  font-family: var(--single-line-body-base);
 }
 
 .img-icon {
@@ -123,8 +101,7 @@
   position: relative;
   font-size: 1.25rem;
   line-height: 100%;
-  font-family: var(--subtitle);
-  color: var(--text-default-default);
+  color: black;
   display: inline-block;
 }
 
@@ -136,10 +113,14 @@
   background-color: #75bcf6;
   height: 2.5rem;
   border-radius: 0.5rem;
+  margin-top: -0.5rem;
+}
+.title{
+  font-size: 100px;
 }
 
 @media(max-width: 1050px) {
-  .hero-actions{
+  .page{
     padding-top: 12rem;
     padding-bottom: 14rem;
   }
@@ -161,7 +142,7 @@
   
 }
 @media(max-width: 850px) {
-  .hero-actions{
+  .page{
     padding-top: 9rem;
     padding-bottom: 11.5rem;
   }
@@ -183,7 +164,7 @@
   
 }
 @media(max-width: 705px) {
-  .hero-actions{
+  .page{
     padding-top: 7rem;
     padding-bottom: 9.5rem;
   }
@@ -206,7 +187,7 @@
   
 }
 @media(max-width: 600px) {
-  .hero-actions{
+  .page{
     padding-top: 5.5rem;
     padding-bottom: 7.5rem;
   }
@@ -227,7 +208,7 @@
   
 }
 @media(max-width: 490px) {
-  .hero-actions{
+  .page{
     padding-top: 4rem;
     padding-bottom: 5.5rem;
   }

@@ -8,8 +8,8 @@
     />
   </head>
   <body>
-    <div class="hero-actions">
-      <div class="text-content-title">
+    <div class="pageElement">
+      <div class="textContent">
         <b class="title">Our Sponsors</b>
         <p class="subtitle">Thank you to all our sponsors for making Hack4Youth possible!</p>
         <div class = "sponsors">
@@ -37,28 +37,7 @@
 }
 
 :root {
-  /* fonts */
-  --single-line-body-base: Inter;
-
-  /* font sizes */
-  --single-line-body-base-size: 1rem;
-
-  /* Colors */
-  --background-brand-default: #2c2c2c;
-  --text-default-default: #1e1e1e;
-  --text-brand-on-brand: #f5f5f5;
-
-  /* Spacing */
-
-
-  /* Gaps */
-  --gap-5xs: 0.5rem;
-
-  /* Paddings */
-  --padding-xs: 0.75rem;
-
-  /* Border radiuses */
-  --br-5xs: 8px;
+  font-family: Inter;
 }
 
 
@@ -76,11 +55,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--space-200);
   text-align: center;
-  font-size: var(--title-hero-size);
   color: #a5d7ff;
-  font-family: var(--single-line-body-base);
   margin:0;
 }
 
@@ -91,7 +67,7 @@
 }
 
 
-.hero-actions {
+.pageElement {
   width: 100%;
   position: relative;
   height: 1100px;
@@ -114,13 +90,17 @@
   cursor: pointer;
 }
 
+.title{
+  font-size: 100px;
+}
+
 @media(max-width:1255px){
   .image{
     width: 16rem;
     height: 16rem;
     padding: 2.1rem;
   }
-  .hero-actions{
+  .pageElement{
     height: 1000px
   }
 }
@@ -131,7 +111,7 @@
     height: 12rem;
     padding: 1.6rem;
   }
-  .hero-actions{
+  .pageElement{
     height: 875px
   }
 }
@@ -148,7 +128,7 @@
   .subtitle{
     font-size: 25px;
   }
-  .hero-actions{
+  .pageElement{
     height: 750px
   }
 }
@@ -165,7 +145,7 @@
   .subtitle{
     font-size: 21px;
   }
-  .hero-actions{
+  .pageElement{
     height: 660px
   }
 }
@@ -182,7 +162,7 @@
   .subtitle{
     font-size: 17px;
   }
-  .hero-actions{
+  .pageElement{
     height: 530px
   }
 }
@@ -199,7 +179,7 @@
   .subtitle{
     font-size: 14px;
   }
-  .hero-actions{
+  .pageElement{
     height: 450px
   }
 }
@@ -217,7 +197,7 @@
     margin-top: -1rem;
     font-size: 11.5px;
   }
-  .hero-actions{
+  .pageElement{
     height: 380px
   }
 }

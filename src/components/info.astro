@@ -6,15 +6,14 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
     />
   </head>
   <body>
-    <div class="innovation">
-      <img class="img-icon" alt="" src="/pictures/innovationBG.jpg" />
+    <div class="pageElement">
+      <img class="img-icon" alt="" src="/pictures/aBG.jpg" />
 
       <div class="blue"></div>
-      <div class="text-content-title">
+      <div class="textContent">
         <b class="title">Welcome to Hack4Youth!</b>
         <div class="subtitle">
           <p>
@@ -81,16 +80,7 @@
 }
 
 :root {
-  /* fonts */
-  --subtitle: Inter;
-
-  /* font sizes */
-  --subtitle-size: 2rem;
-  --title-hero-size: 4.5rem;
-
-  /* Colors */
-  --color-gray: #001f3a;
-  --device-width: 75rem;
+  font-family: Inter;
 }
 .blue,
 .img-icon {
@@ -125,30 +115,26 @@
   object-fit: cover;
   
 }
-.innovation,
-.text-content-title {
+.pageElement,
+.textContent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.text-content-title {
+.textContent {
   align-items: center;
-  gap: var(--space-200);
   z-index: 2;
   text-align: center;
-  font-size: var(--title-hero-size);
-  color: var(--color-gray);
-  font-family: var(--subtitle);
   padding: 0;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 0;
 }
-.innovation {
+.pageElement {
   display: inline-block;
   width: 100%;
   position: relative;
-  height: 29.063rem;
+  height: 29rem;
   max-width: 100%;
   align-items: flex-start;
   padding-top: 3.75rem;
@@ -174,7 +160,6 @@
 .subtitle {
   margin:0;
   position: relative;
-  font-size: var(--subtitle-size);
   line-height: 120%;
   font-weight: 500;
   font-size: 30px;
@@ -283,7 +268,7 @@
     font-size: 50px;
     margin:-1rem;
   }
-  .innovation{
+  .pageElement{
     padding-bottom: 78rem;
   }
   .venuelabel,
@@ -319,7 +304,7 @@
     font-size: 40px;
     margin:-1rem;
   }
-  .innovation{
+  .pageElement{
     padding-bottom: 63rem;
   }
   .codeninjas{
@@ -343,7 +328,7 @@
     font-size: 33px;
     margin:-1rem;
   }
-  .innovation{
+  .pageElement{
     padding-bottom: 55rem;
   }
   
@@ -382,7 +367,7 @@
     font-size: 25px;
     margin:-1rem;
   }
-  .innovation{
+  .pageElement{
     padding-bottom: 41.5rem;
   }
   
@@ -454,7 +439,7 @@
     font-size: 22px;
     margin:-1rem;
   }
-  .innovation{
+  .pageElement{
     margin-bottom: 0;
     padding-bottom: 38rem;
   }
